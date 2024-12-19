@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Available Apartments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://renthomes.com/index.html" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/bcbb51c2e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        scroll-behavior: smooth;
+        background-color: #F5F5F5;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex p-3 justify-between items-center md:px-20 top-0 bg-gradient-to-r from-[#F4511E] to-orange-900"
+    >
+      <img class="px-5" src="./public/Home page Images/logo 1.svg" />
+      <a
+        href="./index.html"
+        class="text-white text-lg font-medium font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[55px] after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        Home
+      </a>
+      <a
+        href="./apartment.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-24 after:bg-white after:rounded-xl"
+      >
+        Apartments
+      </a>
+      <a
+        href="./listproperty.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[6.3rem] after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl"
+      >
+        List Property
+      </a>
+      <a
+        href="./contact.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-24 after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl"
+      >
+        Contact Us
+      </a>
+      <a id="menu" class="md:hidden cursor-pointer">
+        <i
+          class="fa-solid fa-bars text-white transition duration-500 ease-in-out"
+        ></i>
+      </a>
+    </header>
+    <div
+      id="menu-items"
+      class="flex opacity-0 absolute flex-col bg-white cursor-pointer top-[65px] left-0 right-0 bottom-0 transform scale-y-0 transition duration-500 ease-in-out origin-top"
+    >
+      <a
+        href="./index.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Home <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./apartment.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Apartments <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./listproperty.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >List Property <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./contact.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Contact Us <i class="fa-solid fa-angle-right"></i
+      ></a>
+    </div>
+    <main class="w-full px-8 md:px-20 mt-10 md:mt-28">
+      <section class="flex justify-between items-center">
+        <div>
+          <h1 class="font-bold text-sm md:text-2xl">List Of Properties</h1>
+          <div class="hidden md:block bg-[#F4511E] w-[40%] mt-4 h-1"></div>
+        </div>
+        <a href="./listproperty.html">
+          <button
+            class="text-nowrap p-3 text-sm md:text-normal text-white bg-[#F4511E] hover:bg-white hover:text-[#F4511E] border border-[#F4511E] active:bg-[#F4511E] active:text-white font-medium"
+          >
+            Add New Property
+          </button>
+        </a>
+      </section>
+      <section
+        id="content"
+        class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      ></section>
+      <nav class="w-full px-0 md:px-20 my-10 flex justify-center">
+        <ul class="border border-gray-400 rounded-md flex">
+          <a
+            href="#"
+            id="back"
+            class="flex justify-center items-center bg-gray-300 text-gray-600 p-4 rounded-l-md font-semibold"
+            ><li>Back</li></a
+          >
+          <a
+            href="#"
+            class="nav-item py-5 px-4 text-[#F4511E] hover:bg-[#F4511E] hover:text-white active:opacity-50 font-semibold"
+            ><li>1</li></a
+          >
+          <a
+            href="#"
+            class="nav-item py-5 px-4 text-[#F4511E] hover:bg-[#F4511E] hover:text-white active:opacity-50 font-semibold border-x border-gray-300"
+            ><li>2</li></a
+          >
+          <a
+            href="#"
+            class="nav-item py-5 px-4 text-[#F4511E] hover:bg-[#F4511E] hover:text-white active:opacity-50 font-semibold"
+            ><li>3</li></a
+          >
+          <a
+            href="#"
+            id="next"
+            class="flex justify-center items-center bg-[#F4511E] text-white active:opacity-50 p-4 rounded-r-md font-semibold"
+            ><li>Next</li></a
+          >
+        </ul>
+      </nav>
+    </main>
+    <footer
+      class="mt-10 px-10 md:px-14 lg:px-20 bg-gradient-to-r from-[#F4511E] to-orange-900 text-white py-8"
+    >
+      <div class="flex flex-col md:flex-row gap-10">
+     
+        <div class="md:w-[28%] gap-5 flex flex-col mb-4">
+          <p class="text-sm md:text-md font-semibold">
+            Do you need more information on how this works?
+          </p>
+          <p class="text-xs md:text-sm text-gray-200">
+            Contact us now via our official email to get all your questions
+            answered.
+          </p>
+          <a href="mailto:prospermarshalls@gmail.com">
+            <button
+              class="bg-white font-semibold text-nowrap text-[#F4511E] px-6 py-2 rounded-full text-sm border md:hover:border-white md:hover:bg-transparent md:hover:text-white transition-colors"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-10">
+          <div class="flex md:items-center md:flex-row flex-col gap-5">
+            <h3 class="font-semibold text-sm md:text-md text-nowrap">
+              Contact Us
+            </h3>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-location-dot text-white"></i>
+              <span>125 Arida Bus Stop Ikotun, Lagos</span>
+            </a>
+            <a
+              href="mailto:prospermarshalls@gmail.com"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-regular fa-envelope text-white"></i>
+              <span>prospermarshalls@gmail.com</span>
+            </a>
+            <a
+              href="tel:+2348136095561"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-phone text-white"></i>
+              <span>+234 (813) 609 5561</span>
+            </a>
+          </div>
+
+          <div class="flex mb-5 md:mb-0 gap-2 items-center md:gap-5">
+            <h3 class="font-semibold text-sm md:text-md">Follow Us</h3>
+
+            <a
+              href="https://wa.me/2348136095561?Hello there I want to Make Enquiries=Hello%2C%20I%20am%20interested%20in%20your%20services"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://x.com/Prospermarshalz"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/mpj.vibes"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prospermarshalls_/"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prosper-marshall-b02868254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-4 border-t border-gray-800">
+        <p class="text-xs text-gray-200">© 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./apartment.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

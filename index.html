@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find affordable rentals and homes for rent in Lagos, Nigeria. Easily search for available properties by location, explore listings in your area, and discover the perfect home that fits your budget and lifestyle. Whether you're looking for apartments, houses, or short-term rentals, we connect you with the best options in Lagos."
+    />
+    <meta
+      name="keywords"
+      content="rentals in Lagos,  3bed room, House for rent, Lagos Nigeria, Self contain"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Prosper Marshalls / prospermarshalls" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="canonical" href="https://renthomes.com/index.html" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script
+      src="https://kit.fontawesome.com/bcbb51c2e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", Tahoma, sans-serif;
+      }
+
+      body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+    </style>
+   
+    <title>Rent A Home || Rent Today</title>
+  </head>
+  <body>
+    <section class="w-full h-full px-10 lg:px-20 relative">
+      <img
+        class="w-full h-[120vh] object-cover brightness-75 absolute top-0 left-0 -z-10"
+        src="./public/Home page Images/Hero-House-Image.jpg"
+      />
+
+      <header
+        class="w-full flex p-2 justify-between items-center border-b border-white relative"
+      >
+        <img class="px-5" src="./public/Home page Images/logo 1.svg" />
+        <a
+          href="./index.html"
+          class="text-white text-lg font-medium font-['DM Sans'] hidden lg:flex after:absolute after:top-[62px] after:h-[4px] after:w-[60px] after:bg-white after:rounded-xl"
+        >
+          Home
+        </a>
+        <a
+          href="./apartment.html"
+          class="text-white text-lg font-['DM Sans'] hidden lg:flex after:absolute after:top-[62px] after:h-[4px] after:content-[''] after:w-24 after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl transition-opacity duration-1000 ease-in-out"
+        >
+          Apartments
+        </a>
+        <a
+          href="./listproperty.html"
+          class="text-white text-lg font-['DM Sans'] hidden lg:flex after:absolute after:top-[62px] after:h-[4px] after:w-28 after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl"
+        >
+          List Property
+        </a>
+        <a
+          href="./contact.html"
+          class="text-white text-lg font-normal font-['DM Sans'] hidden lg:flex after:absolute after:top-[62px] after:h-[4px] after:w-24 after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl"
+        >
+          Contact Us
+        </a>
+        <a id="menu" class="lg:hidden cursor-pointer">
+          <i
+            class="fa-solid fa-bars text-white transition duration-500 ease-in-out"
+          ></i>
+        </a>
+      </header>
+      <div
+        id="menu-items"
+        class="z-30 flex opacity-0 absolute flex-col bg-white cursor-pointer top-[65px] left-0 right-0 bottom-0 transform scale-y-0 transition duration-500 ease-in-out origin-top"
+      >
+        <a
+          href="./index.html"
+          class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+          >Home <i class="fa-solid fa-angle-right"></i
+        ></a>
+        <a
+          href="./apartment.html"
+          class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+          >Apartments <i class="fa-solid fa-angle-right"></i
+        ></a>
+        <a
+          href="./listproperty.html"
+          class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+          >List Property <i class="fa-solid fa-angle-right"></i
+        ></a>
+        <a
+          href="./contact.html"
+          class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+          >Contact Us <i class="fa-solid fa-angle-right"></i
+        ></a>
+      </div>
+      <section class="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 items-center">
+        <h1
+          class="text-white w-full text-[24px] text-center lg:text-left lg:text-[52px] mt-16 lg:mt-20 font-bold font-['Inter']"
+        >
+          The Most Affortable Places To Stay In Lagos, Nigeria
+        </h1>
+
+        <div class="w-full mt-16 lg:mt-12">
+          <div>
+            <iframe
+              class="rounded-3xl w-full lg:w-[80%] h-[350px] mb-10"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.691105613113!2d3.2672007758939454!3d6.560620393432586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8f228194431d%3A0x16b18e6076393ba7!2s125%20Ikotun%20-%20Idimu%20Rd%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1726579256498!5m2!1sen!2sng"
+              ><a href="https://www.maps.ie/distance-area-calculator.html"
+                >distance maps</a
+              ></iframe
+            >
+          </div>
+          <nav class="p-2 lg:p-4 w-full lg:w-[80%] bg-white rounded-[5px]">
+            <div class="flex relative">
+              <button
+                class="text-[#252b42] dropdown-btn w-full flex bg-gray-300 rounded-l-[5px] justify-center items-center border-gray-400 border text-xs lg:text-sm hover:opacity-70 active:opacity-50"
+                data-dropdown="neighborhood-dropdown"
+              >
+                <span>Neighborhood</span>
+                <img
+                  class="pl-2"
+                  src="./public/Home page Images/dropdown button.svg"
+                  alt="dropdown icon"
+                />
+              </button>
+              <div
+                id="neighborhood-dropdown"
+                class="dropdown-content transform scale-y-0 origin-top transition-all duration-500 ease-in-out hidden absolute cursor-pointer top-14 w-full bg-white shadow-lg"
+              >
+                <a
+                  class="dropdown-option block px-4 py-2 text-xs lg:text-sm hover:bg-gray-100"
+                  data-value="Victoria Island"
+                  >Victoria Island</a
+                >
+                <a
+                  class="dropdown-option text-xs lg:text-sm block px-4 py-2 hover:bg-gray-100"
+                  data-value="Lekki"
+                  >Lekki</a
+                >
+                <a
+                  class="dropdown-option block text-xs lg:text-sm px-4 py-2 hover:bg-gray-100"
+                  data-value="Ikeja"
+                  >Ikeja</a
+                >
+              </div>
+              <button
+                class="w-full dropdown-btn text-[#252b42] bg-gray-300 border-gray-400 border flex justify-center items-center text-xs lg:text-sm hover:opacity-70 active:opacity-50"
+                data-dropdown="type-dropdown"
+              >
+                <span class="text-nowrap">All Type</span>
+                <img
+                  class="pl-2"
+                  src="./public/Home page Images/dropdown button.svg"
+                  alt="dropdown icon"
+                />
+              </button>
+              <div
+                id="type-dropdown"
+                class="dropdown-content transform scale-y-0 origin-top transition-all duration-500 ease-in-out hidden absolute cursor-pointer top-14 w-full bg-white shadow-lg"
+              >
+                <a
+                  class="dropdown-option block px-4 py-2 text-xs lg:text-sm hover:bg-gray-100"
+                  data-value="Apartment"
+                  >Self Contain</a
+                >
+                <a
+                  class="dropdown-option block px-4 py-2 text-xs lg:text-sm hover:bg-gray-100"
+                  data-value="Villa"
+                  >Two Bedroom</a
+                >
+                <a
+                  class="dropdown-option block px-4 py-2 text-xs lg:text-sm hover:bg-gray-100"
+                  data-value="Studio"
+                  >Three Bedroom</a
+                >
+              </div>
+              <a
+                href="./apartment.html"
+                class="cursor-pointer hover:opacity-80 active:opacity-50 w-40 h-[58px] pl-[0.07px] pr-[0.32px] top-0 justify-center items-center inline-flex"
+              >
+                <div
+                  class="pl-[19.58px] pr-[19.42px] py-[19px] bg-[#23a6f0] rounded-r-[5px] border border-[#e6e6e6] justify-center items-center inline-flex"
+                >
+                  <img
+                    src="./public/Home page Images/search icon.svg"
+                    class="IcnSearchIcnXs grow shrink basis-0 self-stretch p-0.5 justify-center items-center inline-flex"
+                  />
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </section>
+    <main class="w-full px-10 lg:px-24 flex flex-col gap-10 mt-28 bg-white">
+      <div
+        class="text-[#18191f] mt-4 text-[24px] lg:text-4xl text-center lg:text-left font-extrabold font-['Inter']"
+      >
+        <h3>Minimum Living Cost Takes Care Of Everything</h3>
+        <div class="hidden lg:block bg-[#F4511E] w-[40%] mt-4 h-1"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+        <div>
+          <img
+            class="w-[387px] h-[521px] rounded-tl-[50px] object-cover rounded-br-[50px] shadow"
+            src="./public/Home page Images/section1 image.jpg"
+          />
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-20"
+        >
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/dollar.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Pay as Little<br />as possible!</span
+            >
+          </div>
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/environment.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Enjoy peaceful<br />Environment!</span
+            >
+          </div>
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/landlord.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Find a <br />Great Landlord!</span
+            >
+          </div>
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/community.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Enjoy wisdom<br />of community!</span
+            >
+          </div>
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/safe.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Stay Safe!<br />Save Money!</span
+            >
+          </div>
+
+          <div
+            class="flex flex-row lg:items-start items-center gap-4 lg:flex-col"
+          >
+            <div
+              class="w-20 h-20 rounded-lg shadow-xl flex items-center justify-center mb-2"
+            >
+              <img src="./public/Home page Images/pay.svg" alt="" />
+            </div>
+            <span
+              class="text-[#18191f] text-xl lg:text-[24px] font-semibold font-['Inter']"
+              >Pay for what<br />you use !</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <section
+      class="py-3 mt-16 lg:mt-28 lg:px-24 px-10 w-full gap-8 grid grid-cols-1 lg:grid-cols-2"
+    >
+      <div class="flex flex-col items-center gap-5 w-full">
+        <div class="flex gap-5 items-end">
+          <div class="relative">
+            <span class="absolute flex items-center justify-center w-full top-4"
+              ><p class="text-white text-sm lg:text-base">
+                Flexible Leases
+              </p></span
+            >
+            <img src="./public/Home page Images/image1.jpg" alt="" />
+          </div>
+          <div class="relative">
+            <span class="absolute flex items-center justify-center w-full top-4"
+              ><p class="text-white text-center text-sm lg:text-base">
+                7-Day Happiness Guaranteed
+              </p></span
+            >
+            <img class="" src="./public/Home page Images/image2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="relative">
+            <span class="absolute flex items-center justify-center w-full top-4"
+              ><p class="text-white text-center text-sm lg:text-base">
+                Monthly House Cleaning
+              </p></span
+            >
+            <img class="" src="./public/Home page Images/image3.jpg" alt="" />
+          </div>
+          <div class="relative">
+            <span class="absolute flex items-center justify-center w-full top-4"
+              ><p class="text-white text-center text-sm lg:text-base">
+                Choose Your Own roommate
+              </p></span
+            >
+            <img
+              class="rounded-lg"
+              src="./public/Home page Images/image4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-col gap-10 flex justify-center items-center lg:items-start"
+      >
+        <h3
+          class="text-[#18191f] text-[24px] text-center lg:text-left lg:text-[40px] font-extrabold font-['Inter']"
+        >
+          Flexibility and options to suit your lifestyle.
+        </h3>
+        <p class="text-[#18191f] text-sm lg:text-lg font-['Inter']">
+          You need it? We got it. We make finding your next home easy,
+          comfortable, and simple. From our happiness guarantee to our selective
+          roommate finder option. We provide you the flexibility that you most
+          desire.
+        </p>
+
+        <a href="./apartment.html">
+          <button
+            class="w-40 px-1 py-4 bg-[#f4511e] rounded-[13px] text-center text-white text-sm lg:text-lg font-semibold font-['Inter'] hover:bg-white hover:border-[#f4511e] border transition duration-300 ease-in-out hover:text-[#f4511e] active:bg-[#f4511e]"
+          >
+            Search Rooms
+          </button></a
+        >
+      </div>
+    </section>
+
+    <section
+      class="font-['Inter'] mt-10 grid grid-cols-1 lg:grid-cols-2 px-10 lg:px-20 bg-[#FEF3EF] gap-10"
+    >
+      <div class="flex flex-col py-16 justify-between relative">
+        <img 
+          class="absolute top-[35px] lg:top-[14%] opacity-40 left-[-50px]"
+          src="./public/Home page Images/Quotation mark.png"
+          alt=""
+        />       
+        <p
+          id="owner-words"
+          class="mb-5 lg:mb-0 text-sm lg:text-lg relative z-10"
+        ></p>
+        <div class="flex gap-2 items-center">
+          <img class="w-20 h-20 rounded-full" id="owner-img" src="" alt="" />
+          <span
+            ><h3
+              id="property-owner"
+              class="text-[#f4511e] font-semibold lg:text-lg text-sm"
+            ></h3>
+            <h4 class="lg:text-lg text-sm">Property Owner</h4></span
+          >
+        </div>
+
+        <div class="flex gap-3 mt-10">
+          <span
+            id="span-1"
+            class="span-1 w-4 h-4 rounded-full bg-[#D9DBE1] cursor-pointer active:opacity-45"
+          ></span>
+          <span
+            id="span-2"
+            class="span-1 w-4 h-4 rounded-full bg-[#D9DBE1] cursor-pointer active:opacity-45"
+          ></span>
+          <span
+            id="span-1"
+            class="span-1 w-4 h-4 rounded-full bg-[#D9DBE1] cursor-pointer active:opacity-45"
+          ></span>
+        </div>
+      </div>
+      <div class="relative flex justify-center">
+        <img src="./public/Home page Images/media bg-cover.jpg" alt="" />
+        <a href="https://www.youtube.com/@prospermarshalls/"
+          ><img
+            class="absolute top-[45%] left-[45%] cursor-pointer w-[15%]"
+            src="./public/Home page Images/Video button.svg"
+            alt=""
+        /></a>
+      </div>
+    </section>
+    <footer
+      class="mt-10 px-10 md:px-14 lg:px-20 bg-gradient-to-r from-[#F4511E] to-orange-900 text-white py-8"
+    >
+      <div class="flex flex-col lg:flex-row gap-10">
+        <!-- Left Column -->
+        <div class="lg:w-[28%] gap-5 flex flex-col mb-4">
+          <p class="text-sm lg:text-lg font-semibold">
+            Do you need more information on how this works?
+          </p>
+          <p class="text-xs lg:text-sm text-gray-200">
+            Contact us now via our official email to get all your questions
+            answered.
+          </p>
+          <a href="mailto:prospermarshalls@gmail.com">
+            <button
+              class="bg-white font-semibold text-nowrap text-[#F4511E] px-6 py-2 rounded-full text-sm border lg:hover:border-white lg:hover:bg-transparent lg:hover:text-white transition-colors"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-10">
+          <div class="flex lg:items-center lg:flex-row flex-col gap-5">
+            <h3 class="font-semibold text-sm lg:text-lg text-nowrap">
+              Contact Us
+            </h3>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-xs lg:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-location-dot text-white"></i>
+              <span>125 Arida Bus Stop Ikotun, Lagos</span>
+            </a>
+            <a
+              href="mailto:prospermarshalls@gmail.com"
+              class="flex items-center gap-2 text-xs lg:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-regular fa-envelope text-white"></i>
+              <span>prospermarshalls@gmail.com</span>
+            </a>
+            <a
+              href="tel:+2348136095561"
+              class="flex items-center gap-2 text-xs lg:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-phone text-white"></i>
+              <span>+234 (813) 609 5561</span>
+            </a>
+          </div>
+
+          <div class="flex mb-5 lg:mb-0 gap-2 items-center lg:gap-5">
+            <h3 class="font-semibold text-sm lg:text-lg">Follow Us</h3>
+
+            <a
+              href="https://wa.me/2348136095561?Hello there I want to Make Enquiries=Hello%2C%20I%20am%20interested%20in%20your%20services"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] lg:hover:bg-[#F4511E] lg:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://x.com/Prospermarshalz"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] lg:hover:bg-[#F4511E] lg:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/mpj.vibes"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] lg:hover:bg-[#F4511E] lg:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prospermarshalls_/"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prosper-marshall-b02868254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-4 border-t border-gray-800">
+        <p class="text-xs text-gray-200">© 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

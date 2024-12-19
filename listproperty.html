@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/bcbb51c2e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>List your Property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <header
+      class="flex p-3 justify-between items-center md:px-20 top-0 bg-gradient-to-r from-[#F4511E] to-orange-900"
+    >
+      <img class="px-5" src="./public/Home page Images/logo 1.svg" />
+      <a
+        href="./index.html"
+        class="text-white text-lg font-medium font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[55px] after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        Home
+      </a>
+      <a
+        href="./apartment.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-28 after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        Apartments
+      </a>
+      <a
+        href="./listproperty.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[6.3rem] after:bg-white after:rounded-xl"
+      >
+        List Property
+      </a>
+      <a
+        href="./contact.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-24 after:bg-white after:opacity-0 hover:after:opacity-60 after:rounded-xl"
+      >
+        Contact Us
+      </a>
+      <a id="menu" class="md:hidden cursor-pointer">
+        <i
+          class="fa-solid fa-bars text-white transition duration-500 ease-in-out"
+        ></i>
+      </a>
+    </header>
+    <div
+      id="menu-items"
+      class="flex opacity-0 absolute flex-col bg-white cursor-pointer top-[65px] left-0 right-0 bottom-0 transform scale-y-0 transition duration-500 ease-in-out origin-top"
+    >
+      <a
+        href="./index.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Home <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./apartment.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Apartments <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./listproperty.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >List Property <i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a
+        href="./contact.html"
+        class="py-4 px-4 active:bg-gray-400 text-gray-700 flex justify-between"
+        >Contact Us <i class="fa-solid fa-angle-right"></i
+      ></a>
+    </div>
+    <main class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+      <h1
+        class="text-center text-[20px] md:text-2xl font-semibold text-gray-900 mb-2"
+      >
+        Your Property With Us And Be Confident That Your Room Will Be Filled
+        Out!
+      </h1>
+
+      <div
+        class="max-w-4xl mx-auto mt-8 bg-white rounded-lg shadow-lg p-6 sm:p-8"
+      >
+        <h2
+          class="text-[20px] text-center md:text-2xl font-bold text-[#ff5722] mb-8"
+        >
+          Add A New Property
+        </h2>
+
+        <form class="space-y-6" id="property-form" onsubmit="return false;">
+        
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+           
+            <div>
+              <label for="size" class="block text-sm font-medium text-gray-700">
+                Room Area m<sup>3</sup> <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="number"
+                id="size"
+                name="size"
+                placeholder="Enter Number in Meters"
+                required
+                min="1"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              />
+            </div>
+
+          
+            <div>
+              <label
+                for="address"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Street Address <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="eg 18 Fasali Street"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              />
+            </div>
+
+        
+            <div>
+              <label for="unit" class="block text-sm font-medium text-gray-700">
+                Number of Bathrooms <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="number"
+                id="unit"
+                name="unit"
+                placeholder="Enter Number of Bathrooms"
+                required
+                min="1"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              />
+            </div>
+
+            <div>
+              <label for="city" class="block text-sm font-medium text-gray-700">
+                City <span class="text-red-500">*</span>
+              </label>
+              <select
+                id="city"
+                name="city"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              >
+                <option value="">Select City</option>
+                <option value="Victoria Island">Victoria Island</option>
+                <option value="Lekki">Lekki</option>
+                <option value="Ikeja">Ikeja</option>
+                <option value="Ikotun">Ikotun</option>
+                <option value="Badagry">Badagry</option>
+              </select>
+            </div>
+
+        
+            <div>
+              <label
+                for="state"
+                class="block text-sm font-medium text-gray-700"
+              >
+                State <span class="text-red-500">*</span>
+              </label>
+              <select
+                id="state"
+                name="state"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              >
+                <option value="">Select State</option>
+                <option value="Lagos">Lagos</option>
+              </select>
+            </div>
+
+      
+            <div>
+              <label
+                for="room-type"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Number of Rooms <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="room-type"
+                type="number"
+                name="room-type"
+                placeholder="Enter Number of Rooms"
+                required
+                min="1"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              />
+            </div>
+
+            <div>
+              <label
+                for="price"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Rent $ /year <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                placeholder="Enter Price in dollar"
+                required
+                min="1"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="description"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Description <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Describe Property in One Sentence"
+              required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#ff5722] focus:border-[#ff5722]"
+            ></textarea>
+          </div>
+
+          
+          <div>
+            <p class="block text-sm font-medium text-gray-700 mb-2">
+              Upload Photos <span class="text-red-500">*</span>
+            </p>
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-8">
+              <div class="text-center">
+                <div class="flex justify-center">
+                  <label for="file-upload" class="cursor-pointer">
+                    <div class="text-center">
+                      <p class="text-gray-600 text-sm md:text-normal">
+                        Drag your images here, or
+                        <span class="text-[#ff5722]">browse</span>
+                      </p>
+                      <p class="text-xs md:text-sm text-gray-500 mt-1">
+                        Supported: JPG, JPEG, PNG
+                      </p>
+                    </div>
+                    <input
+                      id="file-upload"
+                      name="file-upload"
+                      type="file"
+                      required
+                      accept="image/jpeg,image/jpg,image/png"
+                      class="text-xs mt-5 pl-20"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+       
+          <div class="flex justify-center">
+            <button
+              id="submit"
+              type="submit"
+              class="w-full px-6 py-3 bg-[#ff5722] text-white rounded-md hover:bg-[#f4511e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff5722] transition-colors"
+            >
+              Add New Property
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer
+      class="mt-10 px-10 md:px-14 lg:px-20 bg-gradient-to-r from-[#F4511E] to-orange-900 text-white py-8"
+    >
+      <div class="flex flex-col md:flex-row gap-10">
+      
+        <div class="md:w-[28%] gap-5 flex flex-col mb-4">
+          <p class="text-sm md:text-md font-semibold">
+            Do you need more information on how this works?
+          </p>
+          <p class="text-xs md:text-sm text-gray-200">
+            Contact us now via our official email to get all your questions
+            answered.
+          </p>
+          <a href="mailto:prospermarshalls@gmail.com">
+            <button
+              class="bg-white font-semibold text-nowrap text-[#F4511E] px-6 py-2 rounded-full text-sm border md:hover:border-white md:hover:bg-transparent md:hover:text-white transition-colors"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-10">
+          <div class="flex md:items-center md:flex-row flex-col gap-5">
+            <h3 class="font-semibold text-sm md:text-md text-nowrap">
+              Contact Us
+            </h3>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-location-dot text-white"></i>
+              <span>125 Arida Bus Stop Ikotun, Lagos</span>
+            </a>
+            <a
+              href="mailto:prospermarshalls@gmail.com"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-regular fa-envelope text-white"></i>
+              <span>prospermarshalls@gmail.com</span>
+            </a>
+            <a
+              href="tel:+2348136095561"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-phone text-white"></i>
+              <span>+234 (813) 609 5561</span>
+            </a>
+          </div>
+
+          <div class="flex mb-5 md:mb-0 gap-2 items-center md:gap-5">
+            <h3 class="font-semibold text-sm md:text-md">Follow Us</h3>
+
+            <a
+              href="https://wa.me/2348136095561?Hello there I want to Make Enquiries=Hello%2C%20I%20am%20interested%20in%20your%20services"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://x.com/Prospermarshalz"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/mpj.vibes"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prospermarshalls_/"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prosper-marshall-b02868254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-4 border-t border-gray-800">
+        <p class="text-xs text-gray-200">© 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script>
+     
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("property-form");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          try {
+            const formData = new FormData(form);
+            const fileInput = document.getElementById("file-upload");
+            const file = fileInput.files[0];
+
+            if (!file) {
+              alert("Please select an image file");
+              return;
+            }
+
+       
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const imageUrl = e.target.result;
+
+             
+              const newProperty = {
+                img: imageUrl,
+                address: `${formData.get("address")}, ${formData.get(
+                  "city"
+                )}, ${formData.get("state")}`,
+                type: `${formData.get("room-type")} Bedroom`,
+                price: `$${formData.get("price")}/Year`,
+                beds: parseInt(formData.get("room-type")),
+                showers: parseInt(formData.get("unit")),
+                size: parseInt(formData.get("size")),
+                description: formData.get("description"),
+              };
+
+          
+              let pages = JSON.parse(localStorage.getItem("pagesData")) || [[]];
+
+              
+              if (!Array.isArray(pages[2])) {
+                pages[2] = [];
+              }
+              pages[2].push(newProperty);
+
+             
+              localStorage.setItem("pagesData", JSON.stringify(pages));
+
+              alert("Property added successfully!");
+              window.location.href = "apartment.html";
+            };
+
+            reader.readAsDataURL(file);
+          } catch (error) {
+            console.error("Error:", error);
+            alert("Error adding property. Please try again.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

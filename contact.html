@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/bcbb51c2e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+body{
+  scroll-behavior: smooth;
+}
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <header
+      class="flex p-3 justify-between items-center md:px-20 top-0 bg-gradient-to-r from-[#F4511E] to-orange-900"
+    >
+      <img class="px-5" src="./public/Home page Images/logo 1.svg" />
+      <a
+        href="./index.html"
+        class="text-white text-lg font-medium font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[55px] after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        Home
+      </a>
+      <a
+        href="./apartment.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-28 after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        Apartments
+      </a>
+      <a
+        href="./listproperty.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-[6.3rem] after:bg-white after:rounded-xl after:opacity-0 hover:after:opacity-60"
+      >
+        List Property
+      </a>
+      <a
+        href="./contact.html"
+        class="text-white text-lg font-normal font-['DM Sans'] hidden md:flex after:absolute after:top-[70px] after:h-[4px] after:w-24 after:bg-white  after:rounded-xl"
+      >
+        Contact Us
+      </a>
+      <a
+          id="menu"
+          class="md:hidden cursor-pointer "
+        >
+          <i class="fa-solid fa-bars text-white transition duration-500 ease-in-out"></i>
+      </a>
+    </header>
+    <div id="menu-items" class=" flex opacity-0 absolute flex-col bg-white cursor-pointer  top-[65px] left-0 right-0 bottom-0 transform scale-y-0 transition duration-500 ease-in-out origin-top">
+      <a href="./index.html" class="py-4 px-4   active:bg-gray-400  text-gray-700 flex justify-between">Home <i class="fa-solid fa-angle-right"></i></a>
+      <a href="./apartment.html" class="py-4 px-4   active:bg-gray-400  text-gray-700 flex justify-between">Apartments <i class="fa-solid fa-angle-right"></i></a>
+      <a href="./listproperty.html" class="py-4 px-4   active:bg-gray-400  text-gray-700 flex justify-between">List Property <i class="fa-solid fa-angle-right"></i></a>
+      <a href="./contact.html" class="py-4 px-4   active:bg-gray-400  text-gray-700 flex justify-between">Contact Us <i class="fa-solid fa-angle-right"></i></a>
+    </div>
+    <div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+    
+        <div class="text-center mb-12">
+          <h1 class="text-[24px] md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+          <p class="text-[20px] md:text-lg text-gray-600">
+            Get in touch with us. We're here to help and answer any questions
+            you might have.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+          <div class="space-y-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h2 class="text-[24px] md:text-2xl text-center font-semibold mb-6">Contact Information</h2>
+
+              <div class="space-y-4">
+          
+                <div class="flex items-start space-x-4 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-[#F4511E] mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="font-medium">Address</h3>
+                    <a href="https://maps.app.goo.gl/6FQU5UcX3tjtG9Md6" class="text-gray-600">
+                      125 Akinwunmi Street<br />
+                      Idimu - Ikotun rd<br />
+                      Ikotun, Lagos state
+                    </a>
+                  </div>
+                </div>
+
+           
+                <div class="flex items-start space-x-4 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-[#F4511E] mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="font-medium">Phone</h3>
+                    <a href="tel:2348136095561" class="text-gray-600">+(234) 813-609-5561</a>
+                  </div>
+                </div>
+
+             
+                <div class="flex items-start space-x-4 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-[#F4511E] mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="font-medium">Email</h3>
+                    <a  class="text-gray-600">prospermarshalls@gmail.com</p>
+                  </div>
+                </div>
+
+              
+                <div class="flex items-start space-x-4 mt-3 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-[#F4511E] mt-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <div>
+                    <h3 class="font-semibold text-black ">Business Hours</h3>
+                    <p class="text-gray-600">
+                      Monday - Friday: 9:00 AM - 3:00 PM<br />
+                      Saturday - Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-gray-200 w-full mt-3 h-60 rounded-lg flex items-center justify-center"
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.691105613113!2d3.2672007758939454!3d6.560620393432586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8f228194431d%3A0x16b18e6076393ba7!2s125%20Ikotun%20-%20Idimu%20Rd%2C%20Ikotun%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1726579256498!5m2!1sen!2sng"
+                ><a href="https://www.maps.ie/distance-area-calculator.html"
+                  >distance maps</a
+                ></iframe
+              >
+            </div>
+          </div>
+
+          
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-[24px] md:text-2xl font-semibold mb-6">Send us a Message</h2>
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md "
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                  placeholder="How can we help?"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Message
+                </label>
+                <textarea
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md "
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  class="w-full bg-[#F4511E] text-white px-6 py-3 rounded-md hover:bg-white hover:text-[#F4511E] border border-[#F4511E] active:bg-[#F4511E] transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="mt-10 px-8  bg-gradient-to-r from-[#F4511E] to-orange-900 text-white py-8"
+    >
+      <div class="flex flex-col md:flex-row gap-5">
+      
+        <div class="md:w-[28%] gap-5 flex flex-col mb-4">
+          <p class="text-sm mb-5 md:text-md font-semibold text-white">
+            Do you need more information on how this works?
+          </p>
+          <p class="text-xs md:text-sm text-gray-200">
+            Contact us now via our official email to get all your questions
+            answered.
+          </p>
+          <a href="mailto:prospermarshalls@gmail.com">
+            <button
+              class="bg-white font-semibold text-nowrap text-[#F4511E] px-6 py-2 rounded-full text-sm border md:hover:border-white md:hover:bg-transparent md:hover:text-white transition-colors"
+            >
+              Contact us
+            </button>
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-10">
+          <div class="flex md:items-center md:flex-row flex-col gap-5">
+            <h3 class="font-semibold text-sm md:text-md text-nowrap">Contact Us</h3>
+            <a
+              href="#"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-location-dot text-white"></i>
+              <span>125 Arida Bus Stop Ikotun, Lagos</span>
+            </a>
+            <a
+              href="mailto:prospermarshalls@gmail.com"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-regular fa-envelope text-white"></i>
+              <span>prospermarshalls@gmail.com</span>
+            </a>
+            <a
+              href="tel:+2348136095561"
+              class="flex items-center gap-2 text-xs md:text-sm text-gray-200 hover:text-gray-400 text-nowrap"
+            >
+              <i class="fa-solid fa-phone text-white"></i>
+              <span>+234 (813) 609 5561</span>
+            </a>
+          </div>
+
+          <div class="flex mb-5 md:mb-0 gap-2 items-center md:gap-5">
+            <h3 class="font-semibold text-sm md:text-md">Follow Us</h3>
+
+            <a
+              href="https://wa.me/2348136095561?Hello there I want to Make Enquiries=Hello%2C%20I%20am%20interested%20in%20your%20services"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://x.com/Prospermarshalz"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://web.facebook.com/mpj.vibes"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/prospermarshalls_/"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prosper-marshall-b02868254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F4511E] md:hover:bg-[#F4511E] md:hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-4 border-t border-gray-800">
+        <p class="text-xs text-gray-200">© 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
